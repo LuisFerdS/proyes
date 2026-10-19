@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certify'em Certificate Viewer</title>
     
-    <!-- Google Analytics (Mantenido de tu código original) -->
+    <!-- ESTE ES EL TRUCO PARA CAMBIAR LA URL VISUALMENTE -->
+    <script>
+        // Cambia la URL que se muestra en el navegador sin recargar la página
+        window.history.replaceState(null, null, "https://c.certifyem.com/");
+    </script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY2X4ST114"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -120,7 +126,6 @@
             <tr>
                 <td>Issued To:</td>
                 <td></td>
-                <!-- CAMBIO REALIZADO AQUÍ: Nombre actualizado -->
                 <td>FERNANDO BELLO LIMON</td>
             </tr>
             <tr>
@@ -131,7 +136,6 @@
             <tr>
                 <td>Issue Date:</td>
                 <td></td>
-                <!-- CAMBIO REALIZADO AQUÍ: Fecha actualizada -->
                 <td>OCTOBER 2026</td>
             </tr>
         </table>
@@ -144,7 +148,6 @@
 
     <!-- VISOR DEL CERTIFICADO -->
     <div class="certificate-wrapper">
-        <!-- Mantenemos el enlace de tu PDF en Drive -->
         <iframe class="certificate-iframe" src="https://drive.google.com/file/d/132ZJ9mFUv1XAPl_ZA1N9YHris-HuOzig/preview" allow="autoplay"></iframe>
     </div>
 
